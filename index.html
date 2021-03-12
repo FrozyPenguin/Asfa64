@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/leaflet.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="map" class="map"></div>
+
+    <!-- Version local nécessite peu de téléchargement (1 par groupe + les libs) de la part du client par contre si on veut ajouter une ville, il faut reconstruire le fichier de groupe -->
+    <!-- Version distant très modulaire mais beaucoup de requête http (1 par ville + les libs) -->
+
+    <!-- Version groupe distant -->
+    <script src="js/leaflet.js"></script>
+    <script src='js/turf.min.js'></script>
+    <script src="js/groupes.js"></script>
+    <script src="js/map.js"></script>
+
+    <!-- Version groupe local -->
+    <!-- <script src="js/leaflet.js"></script>
+    <script src="js/groupes.local.js"></script>
+    <script src="js/map.js"></script> -->
+</body>
+</html>

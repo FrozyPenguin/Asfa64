@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@snowpack/plugin-webpack": "^2.3.0",
+    "snowpack": "^3.0.13"
+  },
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  }
 }

@@ -27,7 +27,7 @@ groupes.forEach(groupe => {
             }
         })
 
-        fs.writeFile(`./groupes/Groupe-${groupe.color}.geojson`, JSON.stringify(geoJson))
+        fs.writeFile(`../frontend/groupes/Groupe-${groupe.color}.geojson`, JSON.stringify(geoJson))
         .then(() => console.log(`Groupe ${groupe.color} sauvegardé !`));
     })
 })

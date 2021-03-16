@@ -1,0 +1,24 @@
+Page 1 :
+carte plus zoomée
+Afficher nom ville sur la carte (pas toute)
+
+Pourquoi pas mettre en dessous le listing de toute les villes
+quand on clique sur une ville du listing ça affiche un markeur sur la carte avec le nom de la ville
+
+Quand on clique a coté du listing ca ouvre un swal avec la carte du mobilac et un bouton renvoyant sur le site
+Dans le listing afficher les villes soit par ordre alphabétique et par zone soit juste par ordre alphabétique (faire les deux pour tester)
+
+En dessous quand on clique ou survol sur le truc de park ca affiche markeur avec park
+
+Bouton recherche en haut a droite si on tape la ville ca s'affiche avec un markeur avec potentiellement filtre
+
+quand tu cliques sur une zone ca affiche l'image faites pas sarah
+
+quand on clique sur la ville zoomer ca ouvre un swall qui affiche la carte d'identité de la ville
+sur cette carte d'identité :
+nom de la ville + coordonné mairie + blocs ressources
+dans les ressources : les associations dans un accordeons avec dedans les infos (coordonnés)
+oui ou non --> y'a mobilac
+
+Grande ville CCLO afficher quand on ouvre
+Orthez, Mourenx, Arthix, Puyoo

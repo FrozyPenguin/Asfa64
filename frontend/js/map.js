@@ -104,75 +104,59 @@ function tooltipZoneClick(event, groupe, color) {
             let markerPromises = [];
             // Ajoute les marker
             groupeVilles[0].villes.forEach(ville => {
-                let city = ville.nom.replaceAll(' ', '-').replaceAll('é', '%C3%A9');
-                markerPromises.push(axios.get(`https://api-adresse.data.gouv.fr/search/?q=${city}&type=municipality&postcode=${ville.cp}&autocomplete=1`));
-            })
-
-            Promise.all(markerPromises)
-            .then(responseArray => {
-                responseArray.forEach(({ data }) => {
-                    let json = data;
-                    if(!json.features.length) throw 'Nom de commune inconnu !';
-
-                    const icon = L.divIcon({
-                        className: "customMarker",
-                        iconAnchor: [0, 24],
-                        labelAnchor: [-6, 0],
-                        popupAnchor: [0, -36],
-                        html: `
-                        <div style="background-color: ${color};" class="marker-pin-zoom">
-                        </div>
-                        <span class="marker-label" style="font-size: .6rem; top:250%">${json.features[0].properties.name}</span>
-                        `
-                    })
-
-                    let coordinates = json.features[0].geometry.coordinates;
-
-                    let latLng = new L.LatLng(coordinates[1], coordinates[0]);
-                    let marker = new L.Marker(latLng, {
-                        icon: icon
-                    }).addTo(swalMap);
-
-                    marker.addEventListener("click", () => {
-                        axios.get(`https://etablissements-publics.api.gouv.fr/v3/communes/${json.features[0].properties.citycode}/mairie`)
-                        .then(json => {
-                            json = json.data.features[0].properties;
-
-                            Swal.fire({
-                                title: '<strong>Ressources</strong>',
-                                html:
-                                `
-                                <div class="row" style="min-width: 30vw">
-                                    <div class="col-sm-12 col-md-7 text-start">
-                                        <h2> ${ json.adresses[0].commune }</h2>
-                                        <h4>Associations :</h4>
-                                        <p> TODO : Mettre coord </p>
-                                        <p>Dispositif Public (TODO)</p>
-                                        <p>Infrastructure (TODO)</p>
-                                    </div>
-                                    <div class="coordMairie col-sm-12 col-md-5 text-start">
-                                        <hr class="d-md-none" />
-                                        <p>Mairie :</p>
-                                        <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>${ json.telephone }</p>
-                                        <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>${ json.email }</p>
-                                        <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><a href="${ json.url }">Site</a></p>
-                                    </div>
-                                </div>
-                                `,
-                                showCloseButton: true,
-                                showCancelButton: false,
-                                showConfirmButton: false,
-                                focusConfirm: false
-                            })
-                        })
-                        .catch(error => {
-                            throw error;
-                        })
-                    });
+                const icon = L.divIcon({
+                    className: "customMarker",
+                    iconAnchor: [0, 24],
+                    labelAnchor: [-6, 0],
+                    popupAnchor: [0, -36],
+                    html: `
+                    <div style="background-color: ${color};" class="marker-pin-zoom">
+                    </div>
+                    <span class="marker-label" style="font-size: .6rem; top:250%">${ville.nom}</span>
+                    `
                 })
-            })
-            .catch(error => {
-                throw error;
+
+                let latLng = new L.LatLng(ville.coordinates[1], ville.coordinates[0]);
+                let marker = new L.Marker(latLng, {
+                    icon: icon
+                }).addTo(swalMap);
+
+                marker.addEventListener("click", () => {
+                    axios.get(`https://etablissements-publics.api.gouv.fr/v3/communes/${ville.citycode}/mairie`)
+                    .then(json => {
+                        json = json.data.features[0].properties;
+
+                        Swal.fire({
+                            title: '<strong>Ressources</strong>',
+                            html:
+                            `
+                            <div class="row" style="min-width: 30vw">
+                                <div class="col-sm-12 col-md-7 text-start">
+                                    <h2> ${ json.adresses[0].commune }</h2>
+                                    <h4>Associations :</h4>
+                                    <p> TODO : Mettre coord </p>
+                                    <p>Dispositif Public (TODO)</p>
+                                    <p>Infrastructure (TODO)</p>
+                                </div>
+                                <div class="coordMairie col-sm-12 col-md-5 text-start">
+                                    <hr class="d-md-none" />
+                                    <p>Mairie :</p>
+                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>${ json.telephone }</p>
+                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>${ json.email }</p>
+                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><a href="${ json.url }">Site</a></p>
+                                </div>
+                            </div>
+                            `,
+                            showCloseButton: true,
+                            showCancelButton: false,
+                            showConfirmButton: false,
+                            focusConfirm: false
+                        })
+                    })
+                    .catch(error => {
+                        throw error;
+                    })
+                });
             })
         }
 
@@ -223,16 +207,15 @@ function removeMarker(marker) {
 
 function addCityMarker(city, cp) {
     return new Promise((resolve, reject) => {
-        axios.get(`https://api-adresse.data.gouv.fr/search/?q=${city.replaceAll(' ', '%20').replaceAll('é', '%C3%A9')}&type=municipality&postcode=${cp}&autocomplete=1`)
-        .then(json => {
-            json = json.data;
-            if(!json.features.length) throw 'Nom de commune inconnu !';
-
-            let coordinates = json.features[0].geometry.coordinates;
-
-            resolve(addMarker(coordinates[1], coordinates[0], city, null));
+        let findVille = null;
+        groupesInfos.forEach(groupe => {
+            groupe.villes.forEach(ville => {
+                if(ville.nom === city && ville.cp === cp) findVille = ville;
+            })
         })
-        .catch(error => reject(error));
+
+        if(!findVille) reject('Inconnu');
+        resolve(addMarker(findVille.coordinates[1], findVille.coordinates[0], city, null));
     })
 }
 

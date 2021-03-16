@@ -41,7 +41,8 @@ function createListing() {
     })
 
     villes.forEach(ville => {
-        addCityMarker(ville.nom, ville.cp);
+        addCityMarker(ville.nom, ville.cp)
+        .then(marker =>updateList(ville.nom, ville.cp, marker));
     })
 }
 

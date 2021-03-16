@@ -1,57 +1,105 @@
 export default [
     { // Groupe Noir
-        nom: 'Noir',
+        nom: 'Violet',
         villes: [
             {
                 nom: 'Orthez',
-                cp: '64300'
+                cp: '64300',
+                airs: [
+                    ['43.473526125297276', '-0.7566092864108876']
+                ],
+                lac: [
+                    ['43.464746' , '-0.741617']
+                ]
             },
             {
                 nom: 'Viellesegure',
-                cp: '64150'
+                cp: '64150',
+  		        airs: [
+                    ['43.356859' , '-0.682996']
+                ],
+                cities: [
+                    ['43.356731', '-0.682996']
+                ],
             },
             {
                 nom: 'Sauvelade',
-                cp: '64150'
+                cp: '64150',
+                cities: [
+                    ['43.3913603546701', '-0.708088923622562']
+                ],
             },
             {
                 nom: 'Maslacq',
-                cp: '64300'
+                cp: '64300',
+		        airs: [
+                    ['43.441560', '-0.696567']
+                ],
+                cities: [
+                    ['43.437395', '-0.693516']
+                ],
             },
             {
                 nom: 'Castetner',
-                cp: '64300'
+                cp: '64300',
+                lac: [
+                    ['43.451799', '-0.732260'],
+                ]
             },
             {
                 nom: 'Loubieng',
-                cp: '64300'
+                cp: '64300',
             },
             {
                 nom: 'Ozenx-Montestrucq',
-                cp: '64300'
+                cp: '64300',
             },
             {
                 nom: 'Laà Mondrans',
-                cp: '64300'
+                cp: '64300',
             },
             {
                 nom: 'Salles mongiscard',
-                cp: '64300'
+                cp: '64300',
             },
             {
                 nom: 'Biron',
-                cp: '64300'
+                cp: '64300',
+		        airs: [
+                    ['43.476258912152836' , '-0.6745551554628133'],
+                    ['43.47376252572552', ' -0.7507819254946184'],
+                ],
+                cities: [
+                    ['43.464746','-0.741617']
+                ],
             },
             {
                 nom: 'Castetis',
-                cp: '64300'
+                cp: '64300',
+                cities: [
+                    ['43.469064', '-0.711513']
+                ],
             },
             {
                 nom: 'Argagnon',
+                cp: '64300',
+                cities: [
+                    ['43.457517', '-0.685656']
+                ],
+            },
+            {
+                nom: 'Sarpourenx',
+                cp: '64300',
+		        airs: [
+                    ['43.45778202635558' , '-0.7126987374926597']
+                ]
+            },
+            {
+                nom: 'Lanneplaà',
                 cp: '64300'
             }
         ],
-        color: '000000' // La couleur
+        color: '845CFA' // La couleur
     },
     { // Groupe Vert
         nom: 'Vert',
@@ -103,9 +151,21 @@ export default [
             {
                 nom: 'Serres-Sainte-Marie',
                 cp: '64170'
+            },
+            {
+                nom: "Viellenave d'arthez",
+                cp: '64170'
+            },
+            {
+                nom: 'Arnos',
+                cp: '64370'
+            },
+            {
+                nom: 'Casteide cami',
+                cp: '64170'
             }
         ],
-        color: '00ff00'
+        color: 'C8F103'
     },
     { // Groupe Rose
         nom: 'Rose',
@@ -175,7 +235,7 @@ export default [
                 cp: '64370'
             }
         ],
-        color: 'ff6C9E'
+        color: 'D80CEB'
     },
     { // Groupe Bleu
         nom: 'Bleu',
@@ -245,6 +305,6 @@ export default [
                 cp: '64150'
             }
         ],
-        color: '77B5FE'
+        color: '50B4E7'
     },
 ]

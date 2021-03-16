@@ -1,5 +1,5 @@
 const fs = require('fs/promises');
-const groupes = require('./groupes');
+const groupes = require('../frontend/js/groupes.infos');
 const axios = require('axios');
 const union = require('@turf/union').default;
 
@@ -27,7 +27,7 @@ groupes.forEach(groupe => {
             }
         })
 
-        fs.writeFile(`../frontend/groupes/Groupe-${groupe.color}.geojson`, JSON.stringify(geoJson))
+        fs.writeFile(`../frontend/groupes/Groupe-${groupe.color.toUpperCase()}.geojson`, JSON.stringify(geoJson))
         .then(() => console.log(`Groupe ${groupe.color} sauvegardé !`));
     })
 })

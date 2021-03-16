@@ -1,8 +1,10 @@
 import groupesInfos from './groupes.infos.js';
-import { addCityMarker, addMarker, removeMarker } from './map.js';
+import { addCityMarker, removeMarker } from './map.js';
 import { createElementFromHTML } from './utils/htmlToDom.js';
 
 function createListing() {
+    let villes = [];
+    const toShow = ['Orthez', 'Artix', 'Arthez de Béarn', 'Puyoo', 'Mourenx', 'Monein'];
     const listingAlphabeticGroup = document.querySelector('#alphaPlusGroupe');
     // Trie par groupe et par ordre alphabetique
     groupesInfos.forEach(groupe => {
@@ -33,30 +35,13 @@ function createListing() {
         groupe.villes.forEach(ville => {
             accordionBody.appendChild(createElementFromHTML(`<li class="list-group-item" city="${ville.nom}" cp="${ville.cp}">${ville.nom}</li>`))
             .addEventListener('click', liClickEvent);
+
+            if(toShow.includes(ville.nom)) villes.push(ville);
         })
-    })
-
-    // Trie global par ordre alphabétique
-    let villes = [];
-    const listingAlphabeticOnly = document.querySelector('#alpha').querySelector('ul');
-
-    groupesInfos.forEach(groupe => {
-        groupe.villes.forEach(ville => {
-            villes.push(ville);
-        })
-    })
-
-    villes.sort((a, b) => {
-        let nameA = a.nom.toUpperCase();
-        let nameB = b.nom.toUpperCase();
-        return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
     })
 
     villes.forEach(ville => {
-        listingAlphabeticOnly.appendChild(
-            createElementFromHTML(`<li class="list-group-item" city="${ville.nom}" cp="${ville.cp}">${ville.nom}</li>`)
-        )
-        .addEventListener('click', liClickEvent);
+        addCityMarker(ville.nom, ville.cp);
     })
 }
 
@@ -76,6 +61,9 @@ function liClickEvent(event) {
     addCityMarker(ville, cp)
     .then(marker => {
         element.marker = marker;
+        marker.addEventListener("click", (e) => {
+
+        })
         updateList(element.innerHTML, cp, element.marker);
     })
 }

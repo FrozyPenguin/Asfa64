@@ -12,17 +12,29 @@ html, body {
 
 .customMarker {
     position: absolute;
-    width: 22px;
+    width: 12px;
     font-size: 22px;
     left: 0;
     right: 0;
     margin: 10px auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .marker-pin {
     width: 30px;
     height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: #c30b82;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -25%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+}
+
+.marker-pin-zoom {
+    width: 20px;
+    height: 20px;
     border-radius: 50% 50% 50% 0;
     background: #c30b82;
     position: absolute;
@@ -44,6 +56,34 @@ html, body {
     right: 3px;
 }
 
+.marker-pin-zoom::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin: 3px 0 0 3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    right: 3px;
+}
+
+.marker-label {
+    width: 30px;
+    height: 30px;
+    left: -25%;
+    top: 310%;
+    margin: -15px 0 0 -15px;
+    display: flex;
+
+    position: absolute;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
 /* https://www.geoapify.com/create-custom-map-marker-icon */
 .custom-marker-icon {
     position: absolute;
@@ -59,14 +99,14 @@ html, body {
     margin: 20px;
 }
 
-.list-group.listing li.active {
-    background-color: greenyellow;
+.list-group.listing li:hover {
+    cursor: pointer;
 }
 
 #search {
     /*width: 250px;*/
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
     z-index: 999;
     display: flex;
@@ -91,4 +131,48 @@ html, body {
     border-radius: .25rem 0 0 .25rem;
     flex: auto;
     width: 100%;
+}
+
+#mobilacqMapIframe {
+    width: 100% !important;
+    height: 50vh;
+}
+
+#mobilacqContainer {
+    width: 50vw;
+    min-height: 50vh;
+}
+
+.swal2-popup {
+    width: auto !important;
+}
+
+#mobilacqBtn {
+    /*width: 250px;*/
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+    display: flex;
+}
+
+.coordMairie {
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 1em;
+}
+
+@media (max-width: 767.98px) {
+    .coordMairie {
+        border: none;
+    }
+}
+
+.coordMairie p {
+    word-break: break-all;
+}
+
+.icons {
+    width: 1em;
 }

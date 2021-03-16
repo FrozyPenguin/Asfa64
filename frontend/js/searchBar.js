@@ -21,7 +21,7 @@ function initSearchBox() {
         const datas = Array.from(dataset.options);
 
         const result = datas.filter(({ value }) => {
-            return searchBox.value.toLowerCase() == value.toLowerCase();        
+            return searchBox.value.toLowerCase() == value.toLowerCase();
         })
 
         if(result.length) {

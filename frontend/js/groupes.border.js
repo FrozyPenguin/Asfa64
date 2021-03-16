@@ -1,18 +1,18 @@
 export default [
     {
-        url: `groupes/Groupe-000000.geojson`,
-        name: 'Noire'
-    },
-    {
-        url: `groupes/Groupe-00ff00.geojson`,
-        name: 'Verte'
-    },
-    {
-        url: `groupes/Groupe-77B5FE.geojson`,
+        url: `groupes/Groupe-50B4E7.geojson`,
         name: 'Bleu'
     },
     {
-        url: `groupes/Groupe-ff6C9E.geojson`,
+        url: `groupes/Groupe-845CFA.geojson`,
+        name: 'Violet'
+    },
+    {
+        url: `groupes/Groupe-C8F103.geojson`,
+        name: 'Vert'
+    },
+    {
+        url: `groupes/Groupe-D80CEB.geojson`,
         name: 'Rose'
     }
 ]

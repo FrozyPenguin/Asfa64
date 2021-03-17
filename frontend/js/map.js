@@ -49,6 +49,7 @@ function createMap() {
             let bounds = new L.LatLngBounds(arrayOfLatLngs);
             //map.fitBounds(bounds).setZoom(10.6);
             map.setView(bounds.getCenter(), 10.7);
+            map.fitBounds(bounds);
         });
     });
 }
@@ -93,15 +94,14 @@ function tooltipZoneClick(event, groupe, color) {
                 }).addTo(swalMap);
 
                 let bounds = new L.LatLngBounds([mapGeo.getBounds()]);
-                //map.fitBounds(bounds).setZoom(10.6);
                 swalMap.setView(bounds.getCenter(), 10.9);
+                swalMap.fitBounds(bounds);
             });
 
             let groupeVilles = groupesInfos.filter(groupeInfo => groupeInfo.nom == groupe.name);
 
             if(!groupeVilles.length) throw `Le groupe n'existe pas !`;
 
-            let markerPromises = [];
             // Ajoute les marker
             groupeVilles[0].villes.forEach(ville => {
                 const icon = L.divIcon({
@@ -122,40 +122,7 @@ function tooltipZoneClick(event, groupe, color) {
                 }).addTo(swalMap);
 
                 marker.addEventListener("click", () => {
-                    axios.get(`https://etablissements-publics.api.gouv.fr/v3/communes/${ville.citycode}/mairie`)
-                    .then(json => {
-                        json = json.data.features[0].properties;
-
-                        Swal.fire({
-                            title: '<strong>Ressources</strong>',
-                            html:
-                            `
-                            <div class="row" style="min-width: 30vw">
-                                <div class="col-sm-12 col-md-7 text-start">
-                                    <h2> ${ json.adresses[0].commune }</h2>
-                                    <h4>Associations :</h4>
-                                    <p> TODO : Mettre coord </p>
-                                    <p>Dispositif Public (TODO)</p>
-                                    <p>Infrastructure (TODO)</p>
-                                </div>
-                                <div class="coordMairie col-sm-12 col-md-5 text-start">
-                                    <hr class="d-md-none" />
-                                    <p>Mairie :</p>
-                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>${ json.telephone }</p>
-                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>${ json.email }</p>
-                                    <p><svg class="icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><a href="${ json.url }">Site</a></p>
-                                </div>
-                            </div>
-                            `,
-                            showCloseButton: true,
-                            showCancelButton: false,
-                            showConfirmButton: false,
-                            focusConfirm: false
-                        })
-                    })
-                    .catch(error => {
-                        throw error;
-                    })
+                    window.location.href = `citycard.html?citycode=${ville.citycode}&c=${parseInt(color.replace('#', ''), 16) * (20*50+9-8/2)}`;
                 });
             })
         }

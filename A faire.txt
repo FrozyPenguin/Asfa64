@@ -20,5 +20,5 @@ sur cette carte d'identité :
     - blocs ressources : Dans les ressources : les associations dans un accordeon avec dedans les infos (coordonnées)
     oui ou non --> y'a mobilac
 
-Grande ville CCLO afficher quand on ouvre
+Grande ville CCLO afficher quand on ouvre -> fais
 Orthez, Mourenx, Arthix, Puyoo

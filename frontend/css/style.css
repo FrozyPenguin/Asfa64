@@ -157,16 +157,19 @@ html, body {
 }
 
 .coordMairie {
+    position: absolute;
+    top: 3em;
+    right: 10px;
     border: 1px solid black;
-    border-right: none;
-    border-top: none;
-    border-radius: 0 0 0 1em;
+    border-radius: 1em;
 }
 
-@media (max-width: 767.98px) {
-    .coordMairie {
-        border: none;
-    }
+.mobilite {
+    position: absolute;
+    bottom: 3em;
+    right: 10px;
+    border: 1px solid black;
+    border-radius: 1em;
 }
 
 .coordMairie p {
@@ -175,4 +178,23 @@ html, body {
 
 .icons {
     width: 1em;
+}
+
+.citycard {
+    color: black;
+}
+
+.citycard #site a {
+    color: salmon;
+}
+
+@media (max-width: 767.98px) {
+    .coordMairie, .mobilite {
+        border: none;
+        position: unset;
+    }
+
+    #cityContainer {
+        height: auto !important;
+    }
 }

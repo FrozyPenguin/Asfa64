@@ -7,7 +7,7 @@ function createMap() {
     map = L.map('map', {
         zoomSnap: 0.1
     }).setView([48.8534, 2.3488], 10.7);
-        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
     }).addTo(map);
 
@@ -73,7 +73,7 @@ function tooltipZoneClick(event, groupe, color) {
             let swalMap = L.map('swallMap', {
                 zoomSnap: 0.1
             }).setView([48.8534, 2.3488], 10.7);
-                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
             }).addTo(swalMap);
 
@@ -131,13 +131,14 @@ function tooltipZoneClick(event, groupe, color) {
 }
 
 function disableMoving() {
-    map.dragging.disable();
-    map.touchZoom.disable();
+    // map.dragging.disable();
+    // map.touchZoom.disable();
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     map.boxZoom.disable();
     map.keyboard.disable();
-    document.querySelector(".leaflet-control-zoom").style.display = 'none';
+    // document.querySelector(".leaflet-control-zoom").style.display = 'none';
+    document.querySelector(".leaflet-control-zoom").parentElement.style.top = '4em';
 }
 
 function addMarker(lat, lon, name, color) {
@@ -186,9 +187,46 @@ function addCityMarker(city, cp) {
     })
 }
 
+let airsIcons = L.divIcon({
+    className: "customMarker",
+    iconAnchor: [0, 24],
+    labelAnchor: [-6, 0],
+    popupAnchor: [0, -36],
+    html: `
+    <div class="marker-pin airsMarker">
+    </div>
+    `
+})
+
+let lacsIcons = L.divIcon({
+    className: "customMarker",
+    iconAnchor: [0, 24],
+    labelAnchor: [-6, 0],
+    popupAnchor: [0, -36],
+    html: `
+    <div class="marker-pin lacsMarker">
+    </div>
+    `
+})
+
+let citiesIcons = L.divIcon({
+    className: "customMarker",
+    iconAnchor: [0, 24],
+    labelAnchor: [-6, 0],
+    popupAnchor: [0, -36],
+    html: `
+    <div class="marker-pin citiesMarker">
+    </div>
+    `
+})
+
 export {
     createMap,
     addMarker,
     removeMarker,
-    addCityMarker
+    addCityMarker,
+    map,
+    citiesIcons,
+    lacsIcons,
+    airsIcons
 }

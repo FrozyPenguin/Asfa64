@@ -1,3 +1,7 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -157,17 +161,11 @@ html, body {
 }
 
 .coordMairie {
-    position: absolute;
-    top: 3em;
-    right: 10px;
     border: 1px solid black;
     border-radius: 1em;
 }
 
 .mobilite {
-    position: absolute;
-    bottom: 3em;
-    right: 10px;
     border: 1px solid black;
     border-radius: 1em;
 }
@@ -188,13 +186,22 @@ html, body {
     color: salmon;
 }
 
+#fixedContainer {
+    position: fixed;
+    top: 3em;
+    right: 10px;;
+}
+
 @media (max-width: 767.98px) {
     .coordMairie, .mobilite {
         border: none;
-        position: unset;
     }
 
     #cityContainer {
         height: auto !important;
+    }
+
+    #fixedContainer {
+        position: unset;
     }
 }

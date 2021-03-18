@@ -1,8 +1,12 @@
 import groupesInfos from './groupes.infos.js';
-import { addCityMarker, removeMarker } from './map.js';
+import { addCityMarker, airsIcons, citiesIcons, lacsIcons, map, removeMarker } from './map.js';
 import { createElementFromHTML } from './utils/htmlToDom.js';
 
 function createListing() {
+    let airs = [];
+    let lacs = [];
+    let cities = [];
+
     const toShow = ['Orthez', 'Artix', 'Arthez de Béarn', 'Puyoo', 'Mourenx', 'Monein'];
 
     // Trie global par ordre alphabétique
@@ -31,7 +35,42 @@ function createListing() {
             addCityMarker(ville.nom, ville.cp)
             .then(marker =>updateList(ville.nom, ville.cp, marker));
         }
+
+        // Airs de jeu
+        ville.airs?.forEach(air => {
+            let latLng = new L.LatLng(air[0], air[1]);
+            let marker = new L.Marker(latLng, {
+                icon: airsIcons
+            });
+            airs.push(marker);
+        });
+
+        // Lacs
+        ville.lac?.forEach(lac => {
+            let latLng = new L.LatLng(lac[0], lac[1]);
+            let marker = new L.Marker(latLng, {
+                icon: lacsIcons
+            });
+            lacs.push(marker);
+        });
+
+        // Cities
+        ville.cities?.forEach(city => {
+            let latLng = new L.LatLng(city[0], city[1]);
+            let marker = new L.Marker(latLng, {
+                icon: citiesIcons
+            });
+            cities.push(marker);
+        })
     })
+
+    let additionMarkerOverlay = {
+        "Airs": L.layerGroup(airs),
+        "Lacs": L.layerGroup(lacs),
+        "Cities": L.layerGroup(cities)
+    };
+
+    L.control.layers(null, additionMarkerOverlay).addTo(map);
 }
 
 function liClickEvent(event) {

@@ -65,9 +65,9 @@ function createListing() {
     })
 
     let additionMarkerOverlay = {
-        "Airs": L.layerGroup(airs),
-        "Lacs": L.layerGroup(lacs),
-        "Cities": L.layerGroup(cities)
+        '<svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tree" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 13l-2 -2" /><path d="M12 12l2 -2" /><path d="M12 21v-13" /><path d="M9.824 15.995a3 3 0 0 1 -2.743 -3.69a2.998 2.998 0 0 1 .304 -4.833a3 3 0 0 1 4.615 -3.707a3 3 0 0 1 4.614 3.707a2.997 2.997 0 0 1 .305 4.833a3 3 0 0 1 -2.919 3.695h.001h-4z" /></svg>Aires': L.layerGroup(airs),
+        '<svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" /></svg>Lacs': L.layerGroup(lacs),
+        '<svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ball-football" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9" /><path d="M12 7l4.76 3.45l-1.76 5.55h-6l-1.76 -5.55z" /><path d="M12 7v-4m3 13l2.5 3m-.74 -8.55l3.74 -1.45m-11.44 7.05l-2.56 2.95m.74 -8.55l-3.74 -1.45" /></svg>City stade': L.layerGroup(cities)
     };
 
     L.control.layers(null, additionMarkerOverlay).addTo(map);

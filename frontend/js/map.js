@@ -28,20 +28,6 @@ function createMap() {
                 color
             }).addTo(map);
 
-            const content = `
-                <div style="text-align: center">
-                    Equipe <span style="font-weight: bold; color: ${ color }; text-decoration: underline">${ groupe.name }</span>
-                    </br>
-                    Cliquez pour en savoir plus !
-                </div>
-            `;
-
-            mapGeo.bindTooltip(content, {
-                sticky: true,
-                interactive: true,
-                opacity: 1
-            });
-
             mapGeo.on('click', (event) => tooltipZoneClick(event, groupe, color));
 
             arrayOfLatLngs.push(mapGeo.getBounds());
@@ -55,12 +41,6 @@ function createMap() {
 }
 
 function tooltipZoneClick(event, groupe, color) {
-    console.log(
-        `%c Vous avez cliqué sur l'équipe %c${ groupe.name }`,
-        `color: #000`,
-        `font-weight: bold; color: ${ color }; text-decoration: underline`
-    );
-
     // Création de map
     Swal.fire({
         title: `<strong>Zone ${groupe.name}</strong>`,

@@ -8,7 +8,7 @@ export default [
         name: 'Violet'
     },
     {
-        url: `groupes/Groupe-C8F103.geojson`,
+        url: `groupes/Groupe-CBDA33.geojson`,
         name: 'Vert'
     },
     {

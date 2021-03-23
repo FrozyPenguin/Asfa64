@@ -15,10 +15,12 @@ function createMap() {
 
     disableMoving();
 
+    let scaleCnt = 0;
+
     /**
     * Utilisation des groupes locaux
     */
-    groupesLocaux.forEach((groupe, index) => {
+    groupesLocaux.forEach((groupe) => {
         const color = '#' + groupe.url.match(/^.*-(.*).geojson$/i)[1];
 
         axios.get(groupe.url)
@@ -31,11 +33,14 @@ function createMap() {
             mapGeo.on('click', (event) => tooltipZoneClick(event, groupe, color));
 
             arrayOfLatLngs.push(mapGeo.getBounds());
-
-            let bounds = new L.LatLngBounds(arrayOfLatLngs);
             //map.fitBounds(bounds).setZoom(10.6);
-            map.setView(bounds.getCenter(), 10.7);
-            map.fitBounds(bounds);
+            scaleCnt++;
+
+            if(scaleCnt == groupesLocaux.length) {
+                let bounds = new L.LatLngBounds(arrayOfLatLngs);
+                map.setView(bounds.getCenter(), 10.7);
+                map.fitBounds(bounds);
+            }
         });
     });
 }

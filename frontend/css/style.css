@@ -208,18 +208,9 @@ html, body {
     display: flex;
 }
 
-.coordMairie {
-    border: 1px solid black;
-    border-radius: 1em;
-}
-
 .mobilite {
     border: 1px solid black;
     border-radius: 1em;
-}
-
-.coordMairie p {
-    word-break: break-all;
 }
 
 .icons {
@@ -234,22 +225,35 @@ html, body {
     color: salmon;
 }
 
-#fixedContainer {
-    position: fixed;
-    top: 3em;
-    right: 10px;;
+.citycard header, .citycard section {
+    padding: 20px 0;
+    padding-left: 3em;
 }
 
-@media (max-width: 767.98px) {
-    .coordMairie, .mobilite {
-        border: none;
-    }
+.citycard header {
+    color: white;
+}
 
-    #cityContainer {
-        height: auto !important;
-    }
+/* .citycard header h2, .citycard header h3 {
+    -webkit-text-stroke: 1px black;
+} */
 
-    #fixedContainer {
-        position: unset;
-    }
+.citycard ul {
+    position: relative;
+}
+
+.citycard ul::before {
+    content: '';
+    display: block;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    top: -20px;
+    transform: translateY(-50%);
+    left: -40px;
+}
+
+.citycard h1 {
+    font-size: 5em;
 }

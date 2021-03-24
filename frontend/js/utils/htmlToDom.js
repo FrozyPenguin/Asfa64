@@ -1,3 +1,8 @@
+/**
+ * Convertie une chaine de caractère html en element DOM
+ * @param {*} htmlString
+ * @returns un élément DOM
+ */
 function createElementFromHTML(htmlString) {
     var div = document.createElement('div');
     div.innerHTML = htmlString.trim();

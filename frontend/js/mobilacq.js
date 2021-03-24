@@ -1,3 +1,6 @@
+/**
+ * Création du popup et son iframe
+ */
 function initMobilacqSwall() {
     document.querySelector('#mobilacqBtn').addEventListener('click', function(e) {
         Swal.fire({

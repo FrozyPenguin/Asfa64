@@ -1,6 +1,11 @@
 import cardinfo from './listesAssociations.js';
 import { createElementFromHTML } from './utils/htmlToDom.js';
 
+/**
+ * Cette fonction permet de créer les cartes d'indentité de chaque ville
+ * @param { String } citycode le code unique de la ville correspondante en accord avec la geo api du gouvernement
+ * @param { String } color couleur hexadécimal correspondant au fond de la page
+ */
 function createIdCard(citycode, color) {
     let info = cardinfo.filter(info => info.citycode == citycode);
 
@@ -39,7 +44,7 @@ function createIdCard(citycode, color) {
             document.querySelector('#site a').href = json.url;
         else document.querySelector('#site').remove();
 
-        // Infrastructures
+        // Ajout des infrastructures
         if(info.partenaires && info.partenaires.length && info.partenaires instanceof Array) {
             let htmlContent = document.createElement('ul');
 
@@ -56,7 +61,7 @@ function createIdCard(citycode, color) {
             container.append(htmlContent);
         }
 
-        // possibilite
+        // Ajout des "Possibilité sur place"
         if(info.possibilite && info.possibilite.length && info.possibilite instanceof Array) {
             let htmlContent = document.createElement('ul');
 
@@ -69,12 +74,11 @@ function createIdCard(citycode, color) {
             })
 
             let container = document.querySelector(`#infosContainer`);
-            // container.append(createElementFromHTML('<hr class="col-6"/>'));
             container.append(createElementFromHTML(`<h4>Possibilité sur place</h4>`));
             container.append(htmlContent);
         }
 
-        // mobilite
+        // Ajout des mobilités
         if(info.mobilite && info.mobilite.length && info.mobilite instanceof Array) {
             let container = document.querySelector('#mobilite');
 
@@ -94,7 +98,9 @@ function createIdCard(citycode, color) {
 const urlParams = new URLSearchParams(window.location.search);
 let citycode = urlParams.get('citycode');
 let color = (parseInt(urlParams.get('c')) / (20*50+9-8/2)).toString(16);
-createIdCard(citycode, color)
+
+// Les paramètres corresponde au paramètre GET de la page pour plus de simplicité niveau traitement
+createIdCard(citycode, color);
 
 export {
     createIdCard

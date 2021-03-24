@@ -3,6 +3,9 @@ import { addCityMarker } from './map.js';
 import { createElementFromHTML } from './utils/htmlToDom.js';
 import { updateList } from './listing.js';
 
+/**
+ * Création de la barre de recherche des villes sur la carte
+ */
 function initSearchBox() {
     const searchBox = document.querySelector('#citySearchBox');
     const dataset = document.querySelector('#citiesList');

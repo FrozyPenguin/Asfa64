@@ -3,6 +3,9 @@ import groupesInfos from './groupes.infos.js';
 
 let map = null;
 
+/**
+ * Créer la carte sur la page principal et ajoute les grosses bordures
+ */
 function createMap() {
     map = L.map('map', {
         zoomSnap: 0.1
@@ -45,6 +48,13 @@ function createMap() {
     });
 }
 
+/**
+ * Evènement déclencher lors du clique sur une zone
+ * C'est cette fonction qui vient créer le popup et ajouter la carte à l'intérieur
+ * @param {*} event
+ * @param {Object} groupe Données JSON corespondante a la zone
+ * @param {String} color Couleur de la zone correspondante
+ */
 function tooltipZoneClick(event, groupe, color) {
     // Création de map
     Swal.fire({
@@ -62,6 +72,7 @@ function tooltipZoneClick(event, groupe, color) {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
             }).addTo(swalMap);
 
+            // Désactivation de la carte du popup de zone pour la rendre statique
             swalMap.dragging.disable();
             swalMap.touchZoom.disable();
             swalMap.doubleClickZoom.disable();
@@ -115,6 +126,10 @@ function tooltipZoneClick(event, groupe, color) {
     })
 }
 
+/**
+ * Désactivation de certain control au niveau de la carte principal
+ * Peut être supprimé sans impact
+ */
 function disableMoving() {
     // map.dragging.disable();
     // map.touchZoom.disable();
@@ -126,6 +141,14 @@ function disableMoving() {
     document.querySelector(".leaflet-control-zoom").parentElement.style.top = '4em';
 }
 
+/**
+ * Créer un marker et l'ajoute à la carte
+ * @param {*} lat Latitude où placer le marker
+ * @param {*} lon Longitude où placer le marker
+ * @param {*} name Le nom associé au marker (affiché en dessous de celui-ci)
+ * @param {*} color La couleur de fond du market
+ * @returns Le marker nouvellement crée
+ */
 function addMarker(lat, lon, name, color) {
     if(!map) throw 'Carte non existante !';
 
@@ -152,12 +175,22 @@ function addMarker(lat, lon, name, color) {
     return marker;
 }
 
+/**
+ * Supprime un markeur donnée de la carte
+ * @param {*} marker le markeur à supprimer
+ */
 function removeMarker(marker) {
     if(!marker) throw 'Marker invalide !';
 
     map.removeLayer(marker);
 }
 
+/**
+ * Ajoute un markeur sur une ville donnée à partir des informations stockées dans les fichiers
+ * @param {String} city Nom de la ville
+ * @param {String} cp Code postal de la ville
+ * @returns Markeur nouvellement créé
+ */
 function addCityMarker(city, cp) {
     return new Promise((resolve, reject) => {
         let findVille = null;
@@ -172,6 +205,9 @@ function addCityMarker(city, cp) {
     })
 }
 
+/**
+ * Déclaration des markeurs correspondant aux disponibilité public (aires de jeux, lacs, city stade)
+ */
 let airsIcons = L.divIcon({
     className: "customMarker",
     iconAnchor: [0, 24],

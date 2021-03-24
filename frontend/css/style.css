@@ -257,3 +257,8 @@ html, body {
 .citycard h1 {
     font-size: 5em;
 }
+
+.coordMairie {
+    word-break: break-all;
+    overflow: break-all;
+}

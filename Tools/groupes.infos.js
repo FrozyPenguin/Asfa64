@@ -245,7 +245,7 @@ module.exports = [
                 ]
             }
         ],
-        color: 'C8F103'
+        color: '82CC37'
     },
     { // Groupe Rose
         nom: 'Rose',

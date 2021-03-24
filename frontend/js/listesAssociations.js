@@ -10,6 +10,54 @@ export default [
                 tel: '0559672633',
             },
             {
+                nom: 'Cirquebulle',
+                tel : '0614149745'
+            },
+            {
+                nom: 'Lecture et ateliers créatifs/spectacles… Le jardin de Jules Géraldine de Coursan',
+                tel : '0683125432'
+            },
+            {
+                nom: 'Perlimpinpin spectacle',
+                tel : '0667488123'
+            },
+            {
+                nom: 'Ferme de Pouillon',
+                tel : '0645611435'
+            },
+            {
+                nom: 'Pêcherie d Aurit',
+                tel : '0672666201'
+            },
+            {
+                nom: 'Poterie Pouillon',
+                tel : '0678090604'
+            },
+            {
+                nom: 'Association le chat gaucher(spectacle)',
+                tel : '0688873804'
+            },
+            {
+                nom: 'Musique : Nathalie Morin',
+                tel : '0689958284'
+            },
+            {
+                nom: 'Psychomotricité atelier Alice Cillaire',
+                tel : '0676491885'
+            },
+            {
+                nom: 'Ferme pédagogique Billere le jardin de Tony',
+                tel : '0559725756'
+            },
+            {
+                nom: 'Musicothérapeute : Amanda Ségouffin',
+                tel : '0607493219'
+            },
+            {
+                nom: 'Instruments du monde (ateliers musical)',
+                tel : '0611645520'
+            },
+            {
                 nom: 'Centre socio culturel',
                 tel: '0559693578',
             },
@@ -178,33 +226,33 @@ export default [
         partenaires: [
             {
                 nom: '"amasade" 3ème age',
-                mail:'gerald.lacourrege@orange.fr',
+                mail: 'gerald.lacourrege@orange.fr',
                 tel: '0559676296'
             },
             {
                 nom: 'Ecole de musique : initiation enfants et adultes',
-                mail:'celinebergez@hotmail.fr',
+                mail: 'celinebergez@hotmail.fr',
                 tel: '0559673187'
             },
             {
                 nom: "K'DANCE : Salsa",
-                mail:'Kdanse64300@gmail.com',
+                mail: 'Kdanse64300@gmail.com',
                 tel: '0677251824'
             },
             {
                 nom: 'Maslacq Yoga: Pratique du yoga',
-                mail:'karitabacchi@outlook.fr',
+                mail: 'karitabacchi@outlook.fr',
                 tel: '0674827598'
             },
             {
                 nom: 'Etoile Sportive Pyrénéenne : Football',
-                mail:'jeanphilippe.tauzia@orange.fr',
+                mail: 'jeanphilippe.tauzia@orange.fr',
             },
         ],
         possibilite: [
             {
                 nom: 'Bibliothèque ',
-                mail:'bm.maslacq@wanadoo.fr',
+                mail: 'bm.maslacq@wanadoo.fr',
                 tel: '0559673040'
             },
             {
@@ -258,7 +306,7 @@ export default [
             },
             {
                 nom: 'Ecole de musique : initiation enfants et adultes',
-                mail:'celinebergez@hotmail.fr',
+                mail: 'celinebergez@hotmail.fr',
                 tel: '0559673187'
             },
         ],
@@ -376,7 +424,7 @@ export default [
             },
             {
                 nom: 'Aide au loisir des enfants handicap',
-                tel : '05.59.69.17.48'
+                tel: '05.59.69.17.48'
             },
             {
                 nom: 'Base de loisir ',
@@ -424,7 +472,7 @@ export default [
             },
             {
                 nom: "Ferme lait p'tit béarnais",
-                mail : 'lait.ptits.bearnais@orange.fr',
+                mail: 'lait.ptits.bearnais@orange.fr',
                 tel: '0559675441'
             },
         ],
@@ -507,7 +555,7 @@ export default [
         nom: "Lanneplaà",
         cp: "64300",
         citycode: "64312",
-        partenaires : [
+        partenaires: [
             {
                 nom: 'assocaitions sportives les galipettes baby gym (18mois à 5ans)',
                 mail: 'fab.laulhe@yahoo.fr',
@@ -544,7 +592,7 @@ export default [
         nom: "Arthez de Béarn",
         cp: "64370",
         citycode: "64057",
-        partenaires : [
+        partenaires: [
             {
                 nom: 'Ecole Musique : Isabelle Mossima',
                 mail: 'musiquearthez64@gmail',
@@ -580,7 +628,7 @@ export default [
             },
             {
                 nom: "RAM",
-                tel : '0559539176'
+                tel: '0559539176'
             },
             {
                 nom: "Piscine municipale"
@@ -607,43 +655,43 @@ export default [
         citycode: "64396",
         partenaires: [
             {
-                nom : 'peinture sur soie',
-                tel : '0631483485'
+                nom: 'peinture sur soie',
+                tel: '0631483485'
             },
             {
-                nom : 'Peinture aquarelle',
-                tel : '0603494161'
+                nom: 'Peinture aquarelle',
+                tel: '0603494161'
             },
             {
-                nom : 'Cuisine passion',
-                tel : '0673267643 ou 0559676599'
+                nom: 'Cuisine passion',
+                tel: '0673267643 ou 0559676599'
             },
             {
-                nom : 'Médiation et yoga:Gisèle Bonhou',
-                tel : '0621505475'
+                nom: 'Médiation et yoga:Gisèle Bonhou',
+                tel: '0621505475'
             },
             {
-                nom : 'USCO Casteis- Gouz foot, basket',
-                tel : '0672999830'
+                nom: 'USCO Casteis- Gouz foot, basket',
+                tel: '0672999830'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Bibliothèque municipal',
+                nom: 'Bibliothèque municipal',
                 mail: 'biblimont@orange.fr ',
-                tel : '0559676334'
+                tel: '0559676334'
             },
             {
-                nom : 'Parc'
+                nom: 'Parc'
             },
             {
-                nom : 'Parcours santé'
+                nom: 'Parcours santé'
             },
             {
-                nom : 'Parcours sportif'
+                nom: 'Parcours sportif'
             },
             {
-                nom : 'City Stade'
+                nom: 'City Stade'
             }
         ],
         mobilite: [
@@ -659,20 +707,20 @@ export default [
         nom: "Urdès",
         cp: "64370",
         citycode: "64541",
-        partenaires : [
+        partenaires: [
             {
-                nom : 'Etoile urdesienn : association culturelle et loisirs'
+                nom: 'Etoile urdesienn : association culturelle et loisirs'
             },
             {
-                nom : 'Lo hat : Activité créative, artistiqueet de spectacle'
+                nom: 'Lo hat : Activité créative, artistiqueet de spectacle'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Parc'
+                nom: 'Parc'
             },
             {
-                nom : 'City stade'
+                nom: 'City stade'
             }
         ],
         mobilite: [
@@ -690,91 +738,91 @@ export default [
         citycode: "64061",
         partenaires: [
             {
-                nom : 'Nature Jardins familiaux',
-                tel : '0607474460'
+                nom: 'Nature Jardins familiaux',
+                tel: '0607474460'
             },
             {
-                nom : "AMAP Amapola Association pour le maintien d’une agriculture paysanne",
+                nom: "AMAP Amapola Association pour le maintien d’une agriculture paysanne",
                 tel: '0559832629'
             },
             {
-                nom : 'Aquarelle - Peinture à l’huile Section Amicale Laïque',
-                tel : '0559833840'
+                nom: 'Aquarelle - Peinture à l’huile Section Amicale Laïque',
+                tel: '0559833840'
             },
             {
-                nom : 'NOTES EN BULLE : musique',
-                tel : '0559716243'
+                nom: 'NOTES EN BULLE : musique',
+                tel: '0559716243'
             },
             {
-                nom : 'LES AMIS DE LA SALIGUE',
-                tel : '0672721337'
+                nom: 'LES AMIS DE LA SALIGUE',
+                tel: '0672721337'
             },
             {
-                nom : 'ECOLE DE MUSIQUE',
-                tel : '0559832956'
+                nom: 'ECOLE DE MUSIQUE',
+                tel: '0559832956'
             },
             {
-                nom : 'ECOLE DE DANSE',
-                tel : '0559832955'
+                nom: 'ECOLE DE DANSE',
+                tel: '0559832955'
             },
             {
-                nom : 'AMICALE LAÏQUE (SIÈGE): Toutes activités sportives et culturelles',
-                tel : '0559833903'
+                nom: 'AMICALE LAÏQUE (SIÈGE): Toutes activités sportives et culturelles',
+                tel: '0559833903'
             },
             {
-                nom : 'ALCBasket',
+                nom: 'ALCBasket',
                 mail: 'president(at)alcbasket.com',
-                tel : '0611425370'
+                tel: '0611425370'
             },
             {
-                nom : 'ASSOCIATION SPORTIVE ARTISIENNE',
-                tel : '0559832327 ou 0683533786'
+                nom: 'ASSOCIATION SPORTIVE ARTISIENNE',
+                tel: '0559832327 ou 0683533786'
             },
             {
-                nom : 'SECTION AMICALE LAÏQUE - DANSE DE SOCIÉTÉ',
+                nom: 'SECTION AMICALE LAÏQUE - DANSE DE SOCIÉTÉ',
                 mail: 'd.riviere53@laposte.net',
-                tel : '0777250833'
+                tel: '0777250833'
             },
             {
-                nom : 'SECTION AMICALE LAÏQUE - GYMNASTIQUE ZUMBA - PILATES',
+                nom: 'SECTION AMICALE LAÏQUE - GYMNASTIQUE ZUMBA - PILATES',
                 mail: 'mjag0170(at)orange.fr',
-                tel : '0677442454'
+                tel: '0677442454'
             },
             {
-                nom : 'Danses sévillanes et rumbas flamencas',
-                tel : '0608179102'
+                nom: 'Danses sévillanes et rumbas flamencas',
+                tel: '0608179102'
             },
             {
-                nom : 'Los pas volats d’Artics Danses gasconnes, culture béarnaise',
-                tel : '0559832316'
+                nom: 'Los pas volats d’Artics Danses gasconnes, culture béarnaise',
+                tel: '0559832316'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'CRÈCHE L’ÎLOT PETITS PIEDS',
+                nom: 'CRÈCHE L’ÎLOT PETITS PIEDS',
                 tel: '0559832962'
             },
             {
-                nom : "RELAIS D'ASSISTANTES MATERNELLES AMAYRA",
+                nom: "RELAIS D'ASSISTANTES MATERNELLES AMAYRA",
                 tel: '0559539283'
             },
             {
-                nom : 'A.L.S.H. « L’ÎLOT LOISIRS »',
+                nom: 'A.L.S.H. « L’ÎLOT LOISIRS »',
                 tel: '0559025613'
             },
             {
-                nom : 'PISCINE MUNICIPALE',
+                nom: 'PISCINE MUNICIPALE',
                 tel: '0559832958'
             },
             {
-                nom : 'Bibliothèque pour tous',
+                nom: 'Bibliothèque pour tous',
                 tel: ' 0559832213 ou 0611462746'
             },
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -790,12 +838,12 @@ export default [
         nom: "Doazon",
         cp: "64370",
         citycode: "64200",
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Départ de randonnée'
+                nom: 'Départ de randonnée'
             },
             {
-                nom : 'City Stade'
+                nom: 'City Stade'
             }
         ],
         mobilite: [
@@ -811,28 +859,28 @@ export default [
         nom: "Labastide-Monréjeau",
         cp: "64170",
         citycode: "64290",
-        partenaires : [
+        partenaires: [
             {
-                nom : 'Costalats et ribère (club 3ème âge)'
+                nom: 'Costalats et ribère (club 3ème âge)'
             },
             {
-                nom : "Main dans la main avec l'afrique (aide humanitaire)",
+                nom: "Main dans la main avec l'afrique (aide humanitaire)",
             },
             {
-                nom : 'Forme et bonne humeur (gym, pilate, yoga…)',
-                mail:'fbh64170@gmail.com',
-                tel : '0760347551'
+                nom: 'Forme et bonne humeur (gym, pilate, yoga…)',
+                mail: 'fbh64170@gmail.com',
+                tel: '0760347551'
             },
             {
-                nom : 'A.F.P. Amicale Foot et Partage'
+                nom: 'A.F.P. Amicale Foot et Partage'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -848,30 +896,30 @@ export default [
         nom: "Lacq",
         cp: "64170",
         citycode: "64300",
-        partenaires : [
+        partenaires: [
             {
-                nom : 'L’AMASSADA club du 3ème âge',
+                nom: 'L’AMASSADA club du 3ème âge',
                 tel: '0559601376'
             },
             {
-                nom : 'SCALA : club de football',
-                tel : '05 59 60 25 79'
+                nom: 'SCALA : club de football',
+                tel: '05 59 60 25 79'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Bibliothèque',
-                tel : '0559717199 ou 0559601369 '
+                nom: 'Bibliothèque',
+                tel: '0559717199 ou 0559601369 '
             },
             {
-                nom : 'ALSH Maison de l’enfant',
-                tel : '0559025613'
+                nom: 'ALSH Maison de l’enfant',
+                tel: '0559025613'
             },
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -887,14 +935,14 @@ export default [
         nom: "Castillon (Canton d'Arthez-de-Béarn)",
         cp: "64370",
         citycode: "64181",
-        partenaires : [
+        partenaires: [
             {
-                nom : "Alliance Sanfilippo Béarn : Association humanitaire, d'entraide, sociale"
+                nom: "Alliance Sanfilippo Béarn : Association humanitaire, d'entraide, sociale"
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Départ de randonnée'
+                nom: 'Départ de randonnée'
             }
         ],
         mobilite: [
@@ -910,12 +958,12 @@ export default [
         nom: "Boumourt",
         cp: "64370",
         citycode: "64144",
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Foyer des associations'
+                nom: 'Foyer des associations'
             },
             {
-                nom : 'Boucle des bois (dispositif de randonnées)'
+                nom: 'Boucle des bois (dispositif de randonnées)'
             }
         ],
         mobilite: [
@@ -931,45 +979,45 @@ export default [
         nom: "Cescau",
         cp: "64170",
         citycode: "64184",
-        partenaires : [
+        partenaires: [
             {
-                nom : 'ASSOCIATION CULTURE ET LOISIRS :  Sabine CHARTIER',
+                nom: 'ASSOCIATION CULTURE ET LOISIRS :  Sabine CHARTIER',
                 mail: 'bm.cescau64@orange.fr',
-                tel : '0559322445'
+                tel: '0559322445'
             },
             {
-                nom : 'Association des familles rurales des crêtes',
-                tel : '0559770271'
+                nom: 'Association des familles rurales des crêtes',
+                tel: '0559770271'
             },
             {
-                nom : 'ASSOCIATION DES QUARTIEREUNIS',
-                tel : '0646421969'
+                nom: 'ASSOCIATION DES QUARTIEREUNIS',
+                tel: '0646421969'
             },
             {
-                nom : 'A.F.P. Amicale Foot et Partage'
+                nom: 'A.F.P. Amicale Foot et Partage'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : "MAM : Brin d’éveil",
-                mail :'auplaisirdescretes@gmail.com',
-                tel : '0559045299'
+                nom: "MAM : Brin d’éveil",
+                mail: 'auplaisirdescretes@gmail.com',
+                tel: '0559045299'
             },
             {
-                nom : "Association des parents d'élèves",
-                tel : '0622701555'
+                nom: "Association des parents d'élèves",
+                tel: '0622701555'
             },
             {
-                nom : 'Départ de randonnée'
+                nom: 'Départ de randonnée'
             },
             {
-                nom : 'Air de jeux'
+                nom: 'Air de jeux'
             },
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -985,38 +1033,38 @@ export default [
         nom: "Labastide-Cézéracq",
         cp: "64170",
         citycode: "64288",
-        partenaires : [
+        partenaires: [
             {
-                nom : 'Musée Les outils d’autrefois, la boîte à souvenirs',
+                nom: 'Musée Les outils d’autrefois, la boîte à souvenirs',
                 mail: 'pascolette@wanadoo.fr',
-                tel : '0615177376'
+                tel: '0615177376'
             },
             {
-                nom : 'Théâtre Du bruit dans la saligue',
+                nom: 'Théâtre Du bruit dans la saligue',
                 mail: 'andre.patru@orange.fr',
-                tel : '0607558220'
+                tel: '0607558220'
             },
             {
-                nom : '« Costalats etRibére » : club du 3éme âge',
-                tel : '0646421969'
+                nom: '« Costalats etRibére » : club du 3éme âge',
+                tel: '0646421969'
             },
             {
-                nom : '« Las Muralhétes » : association des Parents d’élèves '
+                nom: '« Las Muralhétes » : association des Parents d’élèves '
             },
             {
-                nom : 'ALC Basket'
+                nom: 'ALC Basket'
             },
             {
-                nom : 'PAYAL danse indienne et Bollywood',
-                tel : '0677808123'
+                nom: 'PAYAL danse indienne et Bollywood',
+                tel: '0677808123'
             },
             {
-                nom : 'Chaîne Cézéracquoise (vélo)'
+                nom: 'Chaîne Cézéracquoise (vélo)'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -1032,28 +1080,28 @@ export default [
         nom: "Serres-Sainte-Marie",
         cp: "64170",
         citycode: "64521",
-        partenaires : [
+        partenaires: [
             {
-                nom : "A Quatre Mains :  association de loisirs et de culture,ateliers d’apprentissage, animations & conférences ",
-                mail : 'aquatremains.64@gmail.com',
-                tel :' 0681808110'
+                nom: "A Quatre Mains :  association de loisirs et de culture,ateliers d’apprentissage, animations & conférences ",
+                mail: 'aquatremains.64@gmail.com',
+                tel: ' 0681808110'
             },
             {
-                nom : "SOS Gourmandise association parent d'élève :   récolter des fonds, afin d’aider les institutrices à réaliser leurs projets",
-                tel :'0673736767'
+                nom: "SOS Gourmandise association parent d'élève :   récolter des fonds, afin d’aider les institutrices à réaliser leurs projets",
+                tel: '0673736767'
             },
             {
-                nom : 'Centre équestre',
-                tel :'0619454064'
+                nom: 'Centre équestre',
+                tel: '0619454064'
             },
             {
-                nom : 'Gym club Serrois',
-                mail :'gymclubserrois@yahoo.com'
+                nom: 'Gym club Serrois',
+                mail: 'gymclubserrois@yahoo.com'
             }
         ],
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -1069,15 +1117,15 @@ export default [
         nom: "Viellenave d'arthez",
         cp: "64170",
         citycode: "64554",
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             },
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Air de jeux'
+                nom: 'Air de jeux'
             }
         ],
         mobilite: [
@@ -1093,9 +1141,9 @@ export default [
         nom: "Arnos",
         cp: "64370",
         citycode: "64048",
-        possibilite : [
+        possibilite: [
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -1111,12 +1159,12 @@ export default [
         nom: "Casteide cami",
         cp: "64170",
         citycode: "64171",
-        possibilite : [
+        possibilite: [
             {
-                nom : 'City stade'
+                nom: 'City stade'
             },
             {
-                nom : 'Salle polyvalente'
+                nom: 'Salle polyvalente'
             }
         ],
         mobilite: [
@@ -1136,7 +1184,31 @@ export default [
     {
         nom: "Sault de Navailles",
         cp: "64300",
-        citycode: "64510"
+        citycode: "64510",
+        possibilite: [
+            {
+                nom: 'Bibliothèque',
+                mail : 'bibliosaultdenavailles@orange.fr ',
+                tel: '0559383510'
+            },
+            {
+                nom: 'Stade'
+            },
+            {
+                nom: 'Terrain de tennis'
+            },
+            {
+                nom: 'Boucle de randonnée'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Balansun",
@@ -1161,22 +1233,112 @@ export default [
     {
         nom: "Baigts-de-Béarn",
         cp: "64300",
-        citycode: "64087"
+        citycode: "64087",
+        partenaires: [
+            {
+                nom: "Crèche Graines d'éveil",
+                tel: '0559658684'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Bibliothèque',
+                mail : 'bibliotheque.baigts@orange.fr',
+                tel: '0559653224'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
+                nom: 'Stade'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Bus'
+            },
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Bonnut",
         cp: "64300",
-        citycode: "64135"
+        citycode: "64135",
+        partenaires: [
+            {
+                nom: "Ferme de Menaut /Maraicher",
+                mail :'laurentlesclauze64@gmail.com',
+                tel: '0630167648'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Terrain de pétanque'
+            },
+            {
+                nom: 'Salle de sports (gymnase)'
+            },
+            {
+                nom: 'Boucle de randonnée'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Sallespisse",
         cp: "64300",
-        citycode: "64501"
+        citycode: "64501",
+        possibilite: [
+            {
+                nom: 'Bibliothèque : halte lecture',
+                tel : '0559678778'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: "XL'R"
+            },
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Hagetaubin",
         cp: "64370",
-        citycode: "64254"
+        citycode: "64254",
+        partenaires: [
+            {
+                nom: "Pêcherie d’Aurit",
+                mail :'contact@lapecheriedaurit.fr',
+                tel: '0672666201'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Ramous",
@@ -1186,7 +1348,46 @@ export default [
     {
         nom: "Puyoo",
         cp: "64270",
-        citycode: "64461"
+        citycode: "64461",
+        partenaires: [
+            {
+                nom: "Drac’art",
+                mail :'chritine.hollard@gmail.com',
+                tel: '0628284218'
+            },
+            {
+                nom: "Association du fil au pinceau",
+                tel: '0678163901'
+            },
+            {
+                nom: "Association Amis des arts",
+                tel: '0559651207 ou 0612116406'
+            },
+            {
+                nom: "Yoga - Sophrologie",
+                mail: 'valerie211276@gmail.com',
+                tel :'0615972448'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'City : Stade Haroun Tazieff'
+            },
+            {
+                nom: 'Skatepark'
+            },
+            {
+                nom: 'Départ randonnée'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Lacadée",
@@ -1201,12 +1402,46 @@ export default [
     {
         nom: "Castéide-Candau",
         cp: "64370",
-        citycode: "64172"
+        citycode: "64172",
+        possibilite: [
+            {
+                nom: 'Bibliothèque',
+                mail :'bm.casteidecandau@gmail.com',
+                tel : '0559816866'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Mesplède",
         cp: "64370",
-        citycode: "64382"
+        citycode: "64382",
+        partenaires: [
+            {
+                nom: "Club volley Mesplède",
+                tel: '0678189809'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des sports'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Mourenx",
@@ -1216,76 +1451,510 @@ export default [
     {
         nom: "Lagor",
         cp: "64150",
-        citycode: "64301"
+        citycode: "64301",
+        partenaires: [
+            {
+                nom: 'Crèche',
+                mail: 'n-cazenave@cc-lacqorthez.fr',
+                tel: '0559025124'
+            },
+            {
+                nom: 'Ecole de musique indépendante. Cabinet de musicothérapie',
+                mail: 'anniecuadrado@gmail.com',
+                tel: '0680829023 ou 0676033094'
+            },
+            {
+                nom: 'Foyer rurale',
+                tel: '0559601542'
+            },
+            {
+                nom: 'Ecole de théâtre',
+                tel: '0559603582'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Monein",
         cp: "64360",
-        citycode: "64393"
+        citycode: "64393",
+        partenaires: [
+            {
+                nom: 'Foyer rural',
+                mail: 'foyerruralmonein@orange.fr',
+                tel: '0559212126'
+            },
+            {
+                nom: 'Poney club',
+                tel: '0974562989'
+            },
+            {
+                nom: 'Centre social',
+                mail: 'centresocialmonein@orange.fr',
+                tel: '0559213130'
+            },
+            {
+                nom: 'Médiathèque',
+                tel: '0559212125'
+            },
+            {
+                nom: 'école de danse',
+                tel: 'Béatrice TRIPICCHIO : 0666606799'
+            },
+            {
+                nom: 'Choral',
+                mail: 'moneincantadou.chorale64@orange.fr',
+                tel: '0624075170'
+            },
+            {
+                nom: 'relais d’assistante maternelle : Amayra',
+                mail: 'amayra@wanadoo.fr',
+                tel: '0559539176'
+            },
+            {
+                nom: 'Crèche : cool-couche',
+                mail: 'coolcouche64@gmail.com',
+                tel: '0559213147'
+            },
+            {
+                nom: 'Les amis de benjamine : Association interculturelle',
+                mail: 'gaston.cauhape@orange.fr',
+                tel: 'Marie CAUHAPE : 0559213616 ou Déborah PRATI : 0559214215'
+
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Noguères",
         cp: "64150",
-        citycode: "64418"
+        citycode: "64418",
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'City stade'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Lucq-de-béarn",
         cp: "64360",
-        citycode: "64359"
+        citycode: "64359",
+        partenaires: [
+            {
+                nom: 'Club des joyeux lucquet',
+                mail: 'petreigne.andre@orange.fr',
+                tel: '0559343600'
+            },
+            {
+                nom: 'AEPP (Association d’éducation populaire et paroissiale)',
+                tel: '00559343536'
+            },
+            {
+                nom: 'Cours et exposition de peinture',
+                tel: '0559343859 ou 0559343687'
+            },
+            {
+                nom: 'Danses gasconnes',
+                tel: '0559343574 ou 0559343762',
+            },
+            {
+                nom: 'Activité photo',
+                tel: '0632337460 ou 0671091067',
+            },
+            {
+                nom: 'Activité gymnastique',
+                tel: '0608489146 ou 0559343574'
+            },
+            {
+                nom: 'Activité yoga',
+                tel: '0607424667 ou 0630749884'
+            },
+            {
+                nom: 'Activité zumba',
+                tel: '0623493880 ou 0632337460'
+            },
+            {
+                nom: 'Activité thé dansant',
+                tel: '0632025522'
+            },
+            {
+                nom: 'Associations culturelle CHACAM : Richard BEAUFILS',
+                mail: 'fetedubois@gmail.com',
+                tel: '0559343146 ou 0664998082'
+            },
+            {
+                nom: 'Handball Lucq-de Béarn',
+                mail: 'handball.lucquois@gmail.com',
+                tel: ': 0608117052 ou 0631140355'
+            },
+            {
+                nom: 'L’association des parents d’élèves',
+                mail: 'apelucq@gmail.com',
+                tel: '0607424667'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Bibliothèque municipal',
+                tel: '0750332135 ou 0689267149'
+            },
+            {
+                nom: 'Foyer rural de Lucq-de-Béarn'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Bésingrand",
         cp: "64150",
-        citycode: "64117"
+        citycode: "64117",
+        partenaires: [
+            {
+                nom: 'Le CCAS Action sociale : M. Michel Laurio',
+            },
+        ],
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Lac'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Parbayse",
         cp: "64360",
-        citycode: "64442"
+        citycode: "64442",
+        partenaires: [
+            {
+                nom: 'Asso culturel : Vivement qu’on se barre sur mars',
+            },
+            {
+                nom: 'La cage ouverte : Association sportive'
+            },
+            {
+                nom: 'Education et formation : Les amis de l’école'
+            },
+            {
+                nom: 'Los arditz, Œuvre social en faveur des élèves, pupilles de la nation Parbayse'
+            },
+            {
+                nom: 'Sport’itude 64 (association course à pied cyclisme vtt)'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des associations de Parbayse'
+            },
+            {
+                nom: 'Circuit de randonnée (Rando des Vignobles)'
+            },
+            {
+                nom: 'Aire de pique-nique (Au bord du bois du Baringouste)'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Bus'
+            },
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Cuqueron",
         cp: "64360",
-        citycode: "64197"
+        citycode: "64197",
+        partenaires: [
+            {
+                nom: 'Les A.I.L.E.S  du Moulin, Association d’Initiatives Locales d’Espaces Solidaires',
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Lahourcade",
         cp: "64150",
-        citycode: "64306"
+        citycode: "64306",
+        partenaires: [
+            {
+                nom: 'Association des parents d’élèves',
+            },
+            {
+                nom: 'Au fil du temps : accueil intergénérationnel'
+            },
+            {
+                nom: 'Les gus gus (Asso équitation)'
+            },
+            {
+                nom: 'L’âge d’or : club du troisième âge'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            },
+            {
+                nom: 'Aire de jeu'
+            },
+            {
+                nom: 'Aire de pique nique'
+            },
+            {
+                nom: 'Circuit de randonnée'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Bus de ville'
+            },
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Abos",
         cp: "64360",
-        citycode: "64005"
+        citycode: "64005",
+        partenaires: [
+            {
+                nom: 'Gym abosienne',
+            },
+        ],
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            },
+            {
+                nom: 'City stade'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Pardies",
         cp: "64150",
-        citycode: "64443"
+        citycode: "64443",
+        partenaires: [
+            {
+                nom: 'Foyer des jeunes',
+                tel: 'Jean-Marie CARPENTIER : 06 75 54 18 16'
+            },
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Parc'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Tarsacq",
         cp: "64360",
-        citycode: "64535"
+        citycode: "64535",
+        partenaires: [
+            {
+                nom: 'As’Pyr, Alpinisme et ski pyrénées'
+            },
+        ],
+        possibilite: [
+            {
+                nom: 'Lac'
+            },
+            {
+                nom: 'City stade'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Lacommande",
         cp: "64360",
-        citycode: "64299"
+        citycode: "64299",
+        partenaires: [
+            {
+                nom: 'Foyer des jeunes',
+                tel: 'Jean-Marie CARPENTIER : 06 75 54 18 16'
+            },
+            {
+                nom: 'La commanderie de Lacommande (Programmation culturelle)',
+                mail: 'animations@commanderie-lacommande.fr',
+                tel: '0559212714'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'Le coq en Pâte Lacommande (Location de salle)',
+                mail: 'contatc@coqenpate.fr',
+                tel: ''
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ],
     },
     {
         nom: "Cardesse",
         cp: "64360",
-        citycode: "64165"
+        citycode: "64165",
+        partenaires: [
+            {
+                nom: 'Club détente',
+                tel: '0559213384'
+            },
+            {
+                nom: 'Los Esbarrits : Groupe de chant traditionnel',
+                tel: '0559213075'
+            },
+            {
+                nom: 'Association de parent d’élève : Virginie FILLÂTRE',
+                tel: '0762701869'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Os-marsillon",
         cp: "64150",
-        citycode: "64431"
+        citycode: "64431",
+        partenaires: [
+            {
+                nom: 'Vivre ensemble : association sur le handicap',
+                mail: 'Association.vivre-ensemble@wanadoo.fr',
+                tel: '05 59 60 11 58'
+            },
+            {
+                nom: 'Los Esbarrits : Groupe de chant traditionnel',
+                tel: '0559213075'
+            },
+            {
+                nom: 'Association de parent d’élève : Virginie FILLÂTRE',
+                tel: '0762701869'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Abidos",
         cp: "64150",
-        citycode: "64003"
+        citycode: "64003",
+        partenaires: [
+        ],
+        possibilite: [
+            {
+                nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'City stade'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     }
 ]

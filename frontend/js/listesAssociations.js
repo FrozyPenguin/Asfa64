@@ -1179,7 +1179,12 @@ export default [
     {
         nom: "Saint Boès",
         cp: "64300",
-        citycode: "64471"
+        citycode: "64471",
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Sault de Navailles",
@@ -1213,22 +1218,81 @@ export default [
     {
         nom: "Balansun",
         cp: "64300",
-        citycode: "64088"
+        citycode: "64088",
+        partenaires: [
+            {
+                nom: 'Les peintres du lundi',
+                tel: '0559678211'
+            },
+            {
+                nom : 'Bibliothèque : Halte lecture',
+                tel : '0559678211'
+            }
+        ],
+        possibilite: [
+            {
+                nom: 'Boucle des pyrénées : randonnée',
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
+                nom: 'City Stade'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom : 'Mobilac'
+            }
+        ]
     },
     {
         nom: "Saint Medard",
         cp: "64370",
-        citycode: "64491"
+        citycode: "64491",
+        possibilite: [
+            {
+                nom: 'Stade'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Bellocq",
         cp: "64270",
-        citycode: "64108"
+        citycode: "64108",
+        possibilite: [
+            {
+                nom: 'Bibliothèque',
+                mail : 'bibliotheque.bellocq@orange.fr',
+                tel: '0559651297'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Labeyrie",
         cp: "64300",
-        citycode: "64295"
+        citycode: "64295",
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Baigts-de-Béarn",
@@ -1343,7 +1407,23 @@ export default [
     {
         nom: "Ramous",
         cp: "64270",
-        citycode: "64462"
+        citycode: "64462",
+        possibilite: [
+            {
+                nom: 'Aire de pique-nique'
+            },
+            {
+                nom: 'Complexe sportif'
+            },
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Puyoo",
@@ -1392,12 +1472,27 @@ export default [
     {
         nom: "Lacadée",
         cp: "64300",
-        citycode: "64296"
+        citycode: "64296",
+        possibilite: [
+            {
+                nom: 'Randonnée : boucle de la vallée de Luy de Béarn'
+            },
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Saint-Girons",
         cp: "64300",
-        citycode: "64479"
+        citycode: "64479",
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Castéide-Candau",
@@ -1446,7 +1541,117 @@ export default [
     {
         nom: "Mourenx",
         cp: "64150",
-        citycode: "64410"
+        citycode: "64410",
+        partenaires: [
+            {
+                nom : 'Crèche associative',
+                mail : 'margaret.armengol@lo-solan.org',
+                tel : '0559604283 : Margaret Armengol'
+            },
+            {
+                nom : 'Foyer socio-éducatif à MOURENX',
+                tel : '055960116161 : M. LABARTHE'
+            },
+            {
+                nom : 'Jardins ouvriers et familiaux de France',
+                tel : '0673505128 : M. EL KANDOUSSI'
+            },
+            {
+                nom : 'Compagnie de Théatre “pied dans l’eau”',
+                tel : '0559715038'
+            },
+            {
+                nom : 'Maison jeune culture et loisir',
+                tel : '0559600469 : Mme DUBOIS'
+            },
+            {
+                nom : 'Choral : Mourenx en chœur',
+                tel : '0677442454 : Mme HAURIE'
+
+            },
+            {
+                nom : 'Association “grand ecran” : Association de cinéma',
+                tel : '0559716989 : M. SUBIRY'
+            },
+            {
+                nom : 'Club multimédia',
+                tel : '05 59 60 47 00 : M.FAGET'
+            },
+            {
+                nom : 'Centre social “lo solan”',
+                mail : 'accueil@lo-solan.org',
+                tel : '0559600398 : Marie- Claude APPAULE'
+            },
+            {
+                nom : 'Photo club mourenxois',
+                tel : '0604139690 : M. Marques'
+            },
+            {
+                nom : 'Atelier musical de mourenx',
+                tel : '0559601486 : Madame MENGUAL'
+            },
+            {
+                nom : 'Club de Handball de Mourenx',
+                mail : 'mourenxhandball@laposte.net',
+                tel : '0767039625 ou Mme Magalie BORDAGARAY'
+            },
+            {
+                nom : 'Club de Rugby',
+                tel : '0640406034 : M. WIDELKA'
+            },
+            {
+                nom : 'Club de Foot',
+                tel : '0559716767 : M. VANNIER'
+            },
+            {
+                nom : 'Judo au dojo municipal'
+
+            },
+            {
+                nom : 'Club de natation',
+                tel : '0768456411 : Mme LOUVET'
+            },
+            {
+                nom : 'Club de basketball',
+                tel : '0631946776 : M. ANTONI'
+            },
+            {
+                nom : 'Club de badminton',
+                tel : '0623401451 : M.FORGET'
+            },
+            {
+                nom : 'Club de danse',
+                tel : '0638534071 : Mme DUCOS'
+            },
+            {
+                nom : 'Club de roller',
+                tel : '0559600469 : Mme MASFERER'
+            },
+            {
+                nom : 'Clun de tennis',
+                tel : '0559672393  : M. SCRIBANS'
+            },
+
+        ],
+        possibilite : [
+            {
+                nom : 'Salle des fêtes'
+            },
+            {
+                nom : 'Aire de jeux'
+            },
+            {
+                nom : 'Gymnase'
+            },
+            {
+                nom : 'City stade'
+            }
+        ],
+        mobilite: [
+            {
+                nom: 'Mobilac' //a verifier
+            }
+        ]
     },
     {
         nom: "Lagor",

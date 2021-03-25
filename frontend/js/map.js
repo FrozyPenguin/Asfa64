@@ -33,6 +33,20 @@ function createMap() {
                 color
             }).addTo(map);
 
+            const content = `
+            <div style="text-align: center">
+                <span style="font-weight: bold; color: ${ color }; text-decoration: underline">${ groupe.name }</span>
+                </br>
+                Cliquez pour en savoir plus !
+            </div>
+            `;
+
+            mapGeo.bindTooltip(content, {
+                sticky: true,
+                interactive: true,
+                opacity: 1
+            });
+
             mapGeo.on('click', (event) => tooltipZoneClick(event, groupe, color));
 
             arrayOfLatLngs.push(mapGeo.getBounds());
@@ -58,7 +72,7 @@ function createMap() {
 function tooltipZoneClick(event, groupe, color) {
     // Création de map
     Swal.fire({
-        title: `<strong>Zone ${groupe.name}</strong>`,
+        title: `<strong>${groupe.name}</strong>`,
         html: `<div id="swallMap" class="map" style="width: 40vw; height: 60vh"></div>`,
         showCloseButton: true,
         showCancelButton: false,
@@ -94,7 +108,7 @@ function tooltipZoneClick(event, groupe, color) {
                 swalMap.fitBounds(bounds);
             });
 
-            let groupeVilles = groupesInfos.filter(groupeInfo => groupeInfo.nom == groupe.name);
+            let groupeVilles = groupesInfos.filter(groupeInfo => groupeInfo.color == groupe.url.match(/^.*-(.*).geojson$/i)[1]);
 
             if(!groupeVilles.length) throw `Le groupe n'existe pas !`;
 

@@ -516,7 +516,7 @@ export default [
                 citycode: "64171"
             }
         ],
-        color: "C8F103"
+        color: "82CC37"
     },
     {
         nom: "Rose",
@@ -882,7 +882,12 @@ export default [
                         "43.3635099",
                         "-0.5419172"
                     ]
-                ]
+                ],
+                coordinates: [
+                    -0.533736,
+                    43.355641
+                ],
+                citycode: "64535",
             },
             {
                 nom: "Lacommande",
@@ -895,7 +900,12 @@ export default [
             },
             {
                 nom: "Cardesse",
-                cp: "64360"
+                cp: "64360",
+                coordinates: [
+                    -0.590374,
+                    43.263786
+                ],
+                citycode: "64165"
             },
             {
                 nom: "Os-marsillon",

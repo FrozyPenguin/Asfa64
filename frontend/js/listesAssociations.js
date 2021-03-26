@@ -130,6 +130,9 @@ export default [
             },
             {
                 nom: 'Stade Muncipal'
+            },
+            {
+                nom: 'Aire de jeux'
             }
         ],
         mobilite: [
@@ -168,6 +171,12 @@ export default [
                 nom: 'Salle polyvalente'
             },
             {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
                 nom: 'Salle des associations'
             },
             {
@@ -179,7 +188,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             },
         ]
     },
@@ -196,6 +205,9 @@ export default [
         possibilite: [
             {
                 nom: 'Zone de jeux'
+            },
+            {
+                nom: 'City stade'
             },
             {
                 nom: 'Abbaye'
@@ -215,7 +227,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             },
         ]
     },
@@ -256,6 +268,12 @@ export default [
                 tel: '0559673040'
             },
             {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
                 nom: 'Stade de foot'
             },
             {
@@ -273,7 +291,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -284,6 +302,9 @@ export default [
         possibilite: [
             {
                 nom: 'Salle des fêtes'
+            },
+            {
+                nom: 'Lac'
             }
         ],
         mobilite: [
@@ -291,7 +312,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -323,7 +344,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -354,7 +375,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac'//a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -381,7 +402,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -410,7 +431,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -440,6 +461,12 @@ export default [
                 nom: 'Salle polyvalente'
             },
             {
+                nom: 'City stade'
+            },
+            {
+                nom: 'Aire de jeux'
+            },
+            {
                 nom: 'Stade'
             },
             {
@@ -451,7 +478,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             },
             {
                 nom: 'Accès autoroute'
@@ -485,7 +512,7 @@ export default [
                 nom: 'Salle polyvalente'
             },
             {
-                nom: 'Stade'
+                nom: 'City stade'
             }
         ],
         mobilite: [
@@ -493,7 +520,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -512,6 +539,9 @@ export default [
             },
             {
                 nom: 'Salle polyvalente'
+            },
+            {
+                nom: 'City stade'
             }
         ],
         mobilite: [
@@ -519,7 +549,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -547,7 +577,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -584,7 +614,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -638,6 +668,12 @@ export default [
             },
             {
                 nom: "City stade"
+            },
+            {
+                nom: "Aire de jeux"
+            },
+            {
+                nom: "Lac"
             }
         ],
         mobilite: [
@@ -645,7 +681,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -699,7 +735,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -720,6 +756,9 @@ export default [
                 nom: 'Parc'
             },
             {
+                nom: "Aire de jeux"
+            },
+            {
                 nom: 'City stade'
             }
         ],
@@ -728,7 +767,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -819,6 +858,9 @@ export default [
                 tel: ' 0559832213 ou 0611462746'
             },
             {
+                nom: "Aire de jeux"
+            },
+            {
                 nom: 'City stade'
             },
             {
@@ -830,7 +872,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -844,6 +886,9 @@ export default [
             },
             {
                 nom: 'City Stade'
+            },
+            {
+                nom: "Lac"
             }
         ],
         mobilite: [
@@ -851,7 +896,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -888,7 +933,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -927,7 +972,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -950,7 +995,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -971,7 +1016,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1025,7 +1070,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1072,7 +1117,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1109,7 +1154,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1133,7 +1178,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1151,7 +1196,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1172,7 +1217,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1182,7 +1227,7 @@ export default [
         citycode: "64471",
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1207,11 +1252,14 @@ export default [
             },
             {
                 nom: 'Salle polyvalente'
+            },
+            {
+                nom: "Lac"
             }
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1260,7 +1308,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1280,7 +1328,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1290,7 +1338,7 @@ export default [
         citycode: "64295",
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1325,7 +1373,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1356,7 +1404,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1378,7 +1426,7 @@ export default [
                 nom: "XL'R"
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1400,7 +1448,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1421,7 +1469,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1465,7 +1513,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1480,7 +1528,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1490,7 +1538,7 @@ export default [
         citycode: "64479",
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1510,7 +1558,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1534,7 +1582,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1649,7 +1697,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1684,7 +1732,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1750,7 +1798,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1768,7 +1816,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1841,7 +1889,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1870,7 +1918,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -1914,7 +1962,7 @@ export default [
                 nom: 'Bus'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -1934,7 +1982,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -1975,7 +2023,7 @@ export default [
                 nom: 'Bus de ville'
             },
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -1998,7 +2046,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -2025,7 +2073,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -2048,7 +2096,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -2079,7 +2127,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ],
     },
@@ -2108,7 +2156,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -2138,7 +2186,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     },
@@ -2158,7 +2206,7 @@ export default [
         ],
         mobilite: [
             {
-                nom: 'Mobilac' //a verifier
+                nom: 'Mobilac'
             }
         ]
     }

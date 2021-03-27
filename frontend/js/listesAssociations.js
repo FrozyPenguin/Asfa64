@@ -888,6 +888,9 @@ export default [
                 nom: 'City Stade'
             },
             {
+                nom : 'Salle des fêtes'
+            },
+            {
                 nom: "Lac"
             }
         ],
@@ -983,6 +986,9 @@ export default [
         partenaires: [
             {
                 nom: "Alliance Sanfilippo Béarn : Association humanitaire, d'entraide, sociale"
+            },
+            {
+                nom : 'Salle des fêtes'
             }
         ],
         possibilite: [
@@ -1225,6 +1231,11 @@ export default [
         nom: "Saint Boès",
         cp: "64300",
         citycode: "64471",
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
         mobilite: [
             {
                 nom: 'Mobilac'
@@ -1336,6 +1347,11 @@ export default [
         nom: "Labeyrie",
         cp: "64300",
         citycode: "64295",
+        possibilite: [
+            {
+                nom: 'Salle polyvalente'
+            }
+        ],
         mobilite: [
             {
                 nom: 'Mobilac'
@@ -1525,6 +1541,9 @@ export default [
             {
                 nom: 'Randonnée : boucle de la vallée de Luy de Béarn'
             },
+            {
+                nom : 'Salle des fêtes : Salle mounet'
+            }
         ],
         mobilite: [
             {
@@ -1536,6 +1555,11 @@ export default [
         nom: "Saint-Girons",
         cp: "64300",
         citycode: "64479",
+        possibilite: [
+            {
+                nom: 'Salle des fêtes : Salle Georges Petriat'
+            }
+        ],
         mobilite: [
             {
                 nom: 'Mobilac'
@@ -2084,6 +2108,9 @@ export default [
         partenaires: [
             {
                 nom: 'As’Pyr, Alpinisme et ski pyrénées'
+            },
+            {
+                nom : 'Maison pour tous'
             },
         ],
         possibilite: [
